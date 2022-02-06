@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgba(35, 243, 8, 0.767)f;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: rgba(8, 24, 243, 0.575);
+    --secondary-color: rgba(182, 7, 173, 0.637);
+    --tertiary-color: #ffffff;
 }
 
 body {
@@ -18,7 +18,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     background-color: var(--tertiary-color);
-    padding: 20px 35px;
+    padding: 10px 30px 10px 10px;
     top: 0;
     background-image: url(./images/the_thick_forest-wallpaper.png);
     background-size: cover;
@@ -69,13 +69,15 @@ header nav ul li a:hover {
 
 /* FOOTER STYLES */
 
-footer {
+footer h2 {
     background: var(--primary-color);
-    padding: 40px 35px;
+    padding: 10px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    text-align: center;
+    font-size: 100%;
 }
 
 footer h2 {
@@ -86,7 +88,7 @@ footer h2 {
 
 /* FOOTER STYLES END */
 
-/* STYLE ALL SECTION TAGS */
+/* HERO STYLES TAGS */
 
 .hero {
     background-image: url(./images/the_thick_forest-wallpaper.png);
@@ -97,15 +99,17 @@ footer h2 {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    padding: 15%;
 }
 
 .hero-intro {
+    padding: 5%;
     width: 100%;
     text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 1.57;
 }
 
 .hero-intro h1 {
@@ -115,4 +119,79 @@ footer h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
-/* STYLE ALL SECTION TAGS END */
+/* HERO STYLES END */
+
+/* ABOUT SECTION START */
+
+.flex-row h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5%;
+}
+
+.intro p, .flex-row p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align:center;
+}
+
+/* ABOUT SECTION END */
+
+.background {
+    background-image: url(./images/snow-forest-wallpaper.jpg);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2 {
+        text-align: center;
+        width: 100%;
+      }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px){
+    .intro p {
+        width: 100%;
+      }
+}
+
+.contact {
+    text-align: center;
+  }
+
+  .contact > * {
+    flex: 0 100%;
+  }

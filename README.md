@@ -4,6 +4,14 @@ A work in progress website for my portfolio, will be adding additional adjustmen
 # Built with
 * HTML
 * CSS
+## Table of Content
+
+Header
+Hero/Welcome Section
+Work Section
+About Section
+Contact Info Section
+Footer
 
 ## Github Repo
 https://github.com/dn691997/portfolio (Github)
